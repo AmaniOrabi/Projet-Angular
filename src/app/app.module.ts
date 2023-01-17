@@ -13,6 +13,8 @@ import { HomeComponent } from './home/home.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { SearchComponent } from './search/search.component';
 import { FooterComponent } from './footer/footer.component';
+import { SearchPageComponent } from './search-page/search-page.component';
+import { CreatePostComponent } from './create-post/create-post.component';
 import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
@@ -26,6 +28,8 @@ import { ProfileComponent } from './profile/profile.component';
     SearchFormComponent,
     SearchComponent,
     FooterComponent,
+    SearchPageComponent,
+    CreatePostComponent,
     ProfileComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],

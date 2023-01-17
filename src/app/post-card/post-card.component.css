@@ -1,7 +1,8 @@
 .container {
   box-shadow: rgb(0 0 0 / 16%) 0px 1pt 4pt, rgb(0 0 0 / 8%) 0px 2pt 8pt;
   max-height: 250px;
-  min-width: 500px;
+  min-width: 350px;
+  max-width: 500px;
   background-color: white;
   border-radius: 30px;
   display: grid;
@@ -9,6 +10,9 @@
   grid-template-rows: 1.5fr 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 .trajectory {
   display: flex;

@@ -1,6 +1,6 @@
 .container {
   background-color: white;
-  width: 60%;
+  /* width: 60%; */
   height: 50px;
   border-radius: 10px;
   margin-left: auto;
@@ -10,6 +10,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
+  box-shadow: rgb(0 0 0 / 16%) 0px 1pt 4pt, rgb(0 0 0 / 8%) 0px 2pt 8pt;
 }
 
 .container * {
@@ -37,6 +38,7 @@ input {
   align-items: center;
   color: white;
   cursor: pointer;
+  width: 100%;
 }
 
 .line {
