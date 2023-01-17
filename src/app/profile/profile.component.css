@@ -1,0 +1,61 @@
+.user {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 300px;
+  text-align: center;
+}
+.user p {
+  font-size: 30px;
+  color: rgb(5, 71, 82);
+  font-weight: 600;
+}
+.user img {
+  width: 100px;
+}
+.user .lastname {
+  color: rgb(116, 116, 116);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 0px;
+}
+.container .credentials {
+  gap: 10px;
+  color: #1cafeb;
+  font-size: 18px;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.credentialsContainer {
+  margin-left: 25%;
+  margin-top: 5%;
+  gap: 10px;
+}
+.credentialsContainer h2 {
+  font-weight: 300;
+  color: rgb(5, 71, 82);
+}
+.credentialsContainer .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+.credentialsContainer .item :hover {
+  cursor: pointer;
+}
+.credentialsContainer img {
+  width: 2%;
+  height: 2%;
+}
+.separator {
+  margin-top: 30px;
+  background-color: rgb(197, 190, 190);
+  height: 1px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
