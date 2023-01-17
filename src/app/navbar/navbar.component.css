@@ -36,10 +36,6 @@
   font-size: 40px;
   font-weight: 700;
   display: inline-flex;
-  /* flex-direction: row;
-       align-items: center;
-       justify-content: center;
-       align-content: center; */
 }
 .profile {
   height: 60px;
