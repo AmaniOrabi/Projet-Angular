@@ -4,7 +4,6 @@ import { User } from '../user';
 import { environment } from 'src/environment/environment';
 import jwt_decode from 'jwt-decode';
 import { Router } from '@angular/router';
-import { catchError, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -40,8 +39,9 @@ export class AuthService {
       lastName,
     });
   };
-  getUser = () => {
-    return this.user;
+  getUser = (): any => {
+    if (this.user) return this.user;
+    return new User();
   };
   setUser = (user: User) => {
     this.user = user;

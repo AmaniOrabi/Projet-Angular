@@ -25,6 +25,7 @@ export class UserLoginComponent implements OnInit, OnDestroy {
           name: res.name,
           lastName: res.lastName,
           gender: res.gender,
+          id: res._id,
         });
         this.router.navigate(['/']);
         localStorage.setItem('token', res.token);

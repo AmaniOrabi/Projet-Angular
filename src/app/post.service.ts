@@ -10,4 +10,7 @@ export class PostService {
   getPosts = () => {
     return this.http.get(`${environment.api}post`);
   };
+  getUserPosts = (userId: string) => {
+    return this.http.get(`${environment.api}post/user_posts/${userId}`);
+  };
 }

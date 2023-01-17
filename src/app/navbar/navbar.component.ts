@@ -22,4 +22,7 @@ export class NavbarComponent {
   logout = () => {
     this.authService.logout();
   };
+  show = () => {
+    console.log(this.authService.getUser());
+  };
 }
