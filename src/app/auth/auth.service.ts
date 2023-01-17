@@ -39,9 +39,8 @@ export class AuthService {
       lastName,
     });
   };
-  getUser = (): any => {
-    if (this.user) return this.user;
-    return new User();
+  getUser: any = () => {
+    return this.user;
   };
   setUser = (user: User) => {
     this.user = user;
