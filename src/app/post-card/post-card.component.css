@@ -1,0 +1,44 @@
+.container {
+  box-shadow: rgb(0 0 0 / 16%) 0px 1pt 4pt, rgb(0 0 0 / 8%) 0px 2pt 8pt;
+  height: 300px;
+  width: 500px;
+  background-color: white;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1.5fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.trajectory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+  height: 60px;
+}
+.circle {
+  height: 12px;
+  width: 12px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 3px solid rgb(5, 71, 82);
+}
+.line {
+  height: 40px;
+  width: 5px;
+  background-color: rgb(5, 71, 82);
+}
+.trajectory-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.time {
+  margin-right: 10px;
+}
+.time p {
+  font-weight: bold;
+}
