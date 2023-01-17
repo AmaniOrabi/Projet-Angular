@@ -25,5 +25,8 @@
   <div class="separator"></div>
   <div class="credentialsContainer">
     <h2>Your Trips</h2>
+    <div *ngIf="loaded">
+      <app-post-card *ngFor="let item of posts" [post]="item"></app-post-card>
+    </div>
   </div>
 </div>

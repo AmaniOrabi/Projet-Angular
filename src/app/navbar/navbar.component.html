@@ -6,8 +6,8 @@
   <h2>Carpooling</h2>
   <div>
     <ul class="container">
-      <li>Search</li>
-      <li *ngIf="loggedIn" routerLink="/create">Post a trip</li>
+      <li><a routerLink="/search">Search</a></li>
+      <li *ngIf="loggedIn"><a routerLink="/create">Post a Trip</a></li>
       <li *ngIf="loggedIn">
         <div (click)="logout()" class="profile">
           {{ getUser()?.name?.charAt(0) | uppercase

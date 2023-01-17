@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 <div style="margin-top: -200px">
-  <app-search-form></app-search-form>
+  <app-search-form (myEvent)="updatePosts($event)"></app-search-form>
   <div *ngIf="loaded" style="margin-top: 50px">
     <app-post-card *ngFor="let item of posts" [post]="item"></app-post-card>
   </div>

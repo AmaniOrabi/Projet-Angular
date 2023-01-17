@@ -4,7 +4,6 @@ import { User } from '../user';
 import { environment } from 'src/environment/environment';
 import jwt_decode from 'jwt-decode';
 import { Router } from '@angular/router';
-import { catchError, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
