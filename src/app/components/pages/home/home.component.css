@@ -1,0 +1,12 @@
+.homeContainer {
+  background-image: url("../../../../assets/images/carpool_blablabus_large-e3d8eff32c13cdafc080..svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 630px;
+}
+.title {
+  color: white;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+}

@@ -1,0 +1,38 @@
+.navbar {
+  background-color: white;
+  border-radius: 5px;
+  height: auto;
+  text-align: center;
+  width: 100;
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.navbar * {
+  display: inline;
+}
+.logo {
+  width: 70px;
+  margin-right: 20px;
+}
+
+.container {
+  color: rgb(0, 175, 245);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.title * {
+  color: #fad02c;
+  font-size: 40px;
+  font-weight: 700;
+  display: inline-flex;
+  /* flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center; */
+}
