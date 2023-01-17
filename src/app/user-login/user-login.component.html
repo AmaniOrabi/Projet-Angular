@@ -1,0 +1,21 @@
+<div class="body">
+    <div class="container">
+        <div class="form signin">
+    <h2>Sign In</h2>
+    <form (ngSubmit)="onSubmit(signinform)" #signinform="ngForm">
+    <div class="inputBox">
+        <input id="login-email" type="email" required ngModel name="login-email">
+        <span>Email</span>
+    </div>
+    <div class="inputBox">
+        <input id="login-password" type="password" required ngModel name="login-password">
+        <span>Password</span>
+    </div>
+    <div class="inputBox">
+        <button [disabled]="signinform.invalid" >Connect</button>
+    </div>
+    <p>Not Registered ? <a routerLink="/register" class="create" (click)="goToLogin()">Create an account</a></p>
+    </form>
+</div>
+    </div>
+</div>
