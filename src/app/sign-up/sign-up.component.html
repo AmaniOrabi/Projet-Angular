@@ -1,63 +1,117 @@
+<app-navbar></app-navbar>
 <div class="body">
-    <div class="container">
-        <div class="form signup">
-            <h2>Register</h2>
-            <form (ngSubmit)="onSubmit(signupform)" #signupform="ngForm">
-            <div class="inputBox">
-                <input id="name" type="text" required required ngModel name="name" #name="ngModel">
-                <span>Name
-                    <div class="alert alert-danger"
-                                    *ngIf="name.touched && !name.valid">
-                                    This field is required !
-                </div>
-                </span>
+  <div class="container">
+    <div class="form signup">
+      <h2>Register</h2>
+      <form (ngSubmit)="onSubmit(signupform)" #signupform="ngForm">
+        <div class="inputBox">
+          <input
+            id="name"
+            type="text"
+            required
+            required
+            ngModel
+            name="name"
+            #name="ngModel"
+          />
+          <span
+            >Name
+            <div class="alert alert-danger" *ngIf="name.touched && !name.valid">
+              This field is required !
             </div>
-            <div class="inputBox">
-                <input id="lastName" type="text" required required ngModel name="lastName" #lastName="ngModel">
-                <span>lastName
-                    <div class="alert alert-danger"
-                                    *ngIf="lastName.touched && !lastName.valid">
-                                    This field is required !
-                </div>
-                </span>
-            </div>
-            <div class="inputBox">
-                <input id="email" type="email" required ngModel name="email" #email="ngModel">
-                <span>email
-                    <div class="alert alert-danger"
-                                    *ngIf="email.touched && !email.valid">
-                                    This field is required !
-                </div>
-                </span>
-            </div>
-            <div class="inputBox">
-                <input  id="gender" type="text" required ngModel name="gender" #gender="ngModel">
-                <span>Gender
-                    <div class="alert alert-danger"
-                                    *ngIf="gender.touched && !gender.valid">
-                                    This field is required !
-                </div>
-                </span>
-            </div>
-            <div class="inputBox">
-                <input id="password" type="password" required ngModel name="password" #password="ngModel" minlength="8">
-                <span>password
-                                    <div class="alert alert-danger"
-                                    *ngIf="password.touched && !password.valid && password.errors?.['minlength']">
-                                    minimum length is 8
-                </div>
-                </span>
-            </div>
-            <input type="checkbox" id="checkbox"/> 
-                    <label for="checkbox">
-                    <span class="ui"></span>Keep me signed in</label>
-            <div class="inputBox">
-                <button [disabled]="signupform.invalid" >Create Account</button>
-            </div>
-            <p>Already a member ? <a routerLink="/login" class="login" (click)="goToRegister()">Log in</a></p>
-        </form>
+          </span>
         </div>
+        <div class="inputBox">
+          <input
+            id="lastName"
+            type="text"
+            required
+            required
+            ngModel
+            name="lastName"
+            #lastName="ngModel"
+          />
+          <span
+            >lastName
+            <div
+              class="alert alert-danger"
+              *ngIf="lastName.touched && !lastName.valid"
+            >
+              This field is required !
+            </div>
+          </span>
+        </div>
+        <div class="inputBox">
+          <input
+            id="email"
+            type="email"
+            required
+            ngModel
+            name="email"
+            #email="ngModel"
+          />
+          <span
+            >email
+            <div
+              class="alert alert-danger"
+              *ngIf="email.touched && !email.valid"
+            >
+              This field is required !
+            </div>
+          </span>
+        </div>
+        <div class="inputBox">
+          <input
+            id="gender"
+            type="text"
+            required
+            ngModel
+            name="gender"
+            #gender="ngModel"
+          />
+          <span
+            >Gender
+            <div
+              class="alert alert-danger"
+              *ngIf="gender.touched && !gender.valid"
+            >
+              This field is required !
+            </div>
+          </span>
+        </div>
+        <div class="inputBox">
+          <input
+            id="password"
+            type="password"
+            required
+            ngModel
+            name="password"
+            #password="ngModel"
+            minlength="8"
+          />
+          <span
+            >password
+            <div
+              class="alert alert-danger"
+              *ngIf="password.touched && !password.valid && password.errors?.['minlength']"
+            >
+              minimum length is 8
+            </div>
+          </span>
+        </div>
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox"> <span class="ui"></span>Keep me signed in</label>
+        <div class="inputBox">
+          <button [disabled]="signupform.invalid">Create Account</button>
+        </div>
+        <p>
+          Already a member ?
+          <a routerLink="/login" class="login" (click)="goToRegister()"
+            >Log in</a
+          >
+        </p>
+      </form>
     </div>
-    </div>
-    <app-post-card></app-post-card>
-
+  </div>
+  <app-post-card></app-post-card>
+</div>

@@ -12,6 +12,7 @@ import { AuthService } from '../auth/auth.service';
 })
 export class SignUpComponent {
   constructor(private router: Router, private authService: AuthService) {}
+  error: string = '';
 
   onSubmit(form: NgForm) {
     this.authService
@@ -22,7 +23,18 @@ export class SignUpComponent {
         form.controls['name'].value,
         form.controls['lastName'].value
       )
-      .subscribe((res) => console.log(res));
+      .subscribe((res: any) => {
+        console.log(res);
+        if (!res.token) return (this.error = 'Error signing in');
+        this.authService.setUser({
+          email: res.email,
+          name: res.name,
+          lastName: res.lastName,
+          gender: res.gender,
+        });
+        this.router.navigate(['/']);
+        return localStorage.setItem('token', res.token);
+      });
   }
 
   goToRegister() {

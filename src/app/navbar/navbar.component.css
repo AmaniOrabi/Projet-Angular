@@ -4,16 +4,11 @@
   height: auto;
   text-align: center;
   width: 100;
-  display: grid;
-  grid-template-columns: 2fr 4fr 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
+  display: flex;
+  align-content: center;
+  padding: 10px;
 }
 
-.navbar * {
-  display: inline;
-}
 .logo {
   width: 70px;
   margin-right: 20px;
@@ -21,9 +16,19 @@
 
 .container {
   color: rgb(0, 175, 245);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.container li {
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.3s ease;
+  list-style: none;
+}
+.container li:hover {
+  color: rgb(77, 77, 77);
 }
 
 .title * {
@@ -35,4 +40,22 @@
        align-items: center;
        justify-content: center;
        align-content: center; */
+}
+.profile {
+  height: 60px;
+  width: 60px;
+  background-color: #cacaca;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.container a {
+  color: rgb(0, 175, 245);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.container a:hover {
+  color: rgb(77, 77, 77);
 }
