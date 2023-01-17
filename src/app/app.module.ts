@@ -15,6 +15,7 @@ import { SearchComponent } from './search/search.component';
 import { FooterComponent } from './footer/footer.component';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { CreatePostComponent } from './create-post/create-post.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { CreatePostComponent } from './create-post/create-post.component';
     FooterComponent,
     SearchPageComponent,
     CreatePostComponent,
+    ProfileComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
