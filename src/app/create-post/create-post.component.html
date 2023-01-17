@@ -1,15 +1,69 @@
 <app-navbar></app-navbar>
 <div class="container">
   <h1>Create a new post</h1>
-  <form class="form">
-    <input type="text" placeholder="Departure" ngModel name="" /><input
+  <form (ngSubmit)="onsubmit(form)" class="form" #form="ngForm">
+    <input
+      type="text"
+      placeholder="Departure"
+      ngModel
+      name="departure"
+      #departure="ngModel"
+      required
+    />
+    <div
+      class="alert alert-danger"
+      *ngIf="departure.touched && departure.errors?.['required']"
+    >
+      Required Field
+    </div>
+    <input
       type="text"
       placeholder="Arrival"
+      ngModel
+      name="arrival"
+      #arrival="ngModel"
+      required
     />
-    <input type="number" placeholder="Places available" /><input
+    <div
+      class="alert alert-danger"
+      *ngIf="arrival.touched && arrival.errors?.['required']"
+    >
+      Required Field
+    </div>
+    <input
+      type="number"
+      placeholder="Places available"
+      ngModel
+      name="number"
+      #number="ngModel"
+      required
+    />
+    <div
+      class="alert alert-danger"
+      *ngIf="number.touched && number.errors?.['required']"
+    >
+      Required Field
+    </div>
+    <input
       type="text"
       placeholder="Price"
+      ngModel
+      name="price"
+      #price="ngModel"
+      required
     />
-    <input type="datetime-local" />
+    <div
+      class="alert alert-danger"
+      *ngIf="price.touched && price.errors?.['required']"
+    >
+      Required Field
+    </div>
+    <input type="datetime-local" ngModel name="date" #date="ngModel" required />
+    <div
+      class="alert alert-danger"
+      *ngIf="date.touched && date.errors?.['required']"
+    >
+      Required Field
+    </div>
   </form>
 </div>
