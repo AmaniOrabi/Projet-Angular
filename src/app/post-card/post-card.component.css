@@ -1,7 +1,7 @@
 .container {
   box-shadow: rgb(0 0 0 / 16%) 0px 1pt 4pt, rgb(0 0 0 / 8%) 0px 2pt 8pt;
-  height: 300px;
-  width: 500px;
+  max-height: 250px;
+  min-width: 500px;
   background-color: white;
   border-radius: 30px;
   display: grid;
@@ -41,4 +41,20 @@
 }
 .time p {
   font-weight: bold;
+}
+.price {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  font-size: 20px;
+}
+.icon {
+  background-color: #dddddd;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

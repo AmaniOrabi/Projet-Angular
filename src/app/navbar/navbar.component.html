@@ -3,11 +3,19 @@
     <img src="../../../assets/images/car.png" alt="carLogo" class="logo" />
     <div>Hitch it</div>
   </div>
-  <div>Carpooling</div>
+  <h2>Carpooling</h2>
   <div>
     <ul class="container">
       <li>Search</li>
-      <li>Post a trip</li>
+      <li *ngIf="loggedIn">Post a trip</li>
+      <li *ngIf="loggedIn">
+        <div (click)="logout()" class="profile">
+          {{ getUser()?.name?.charAt(0) | uppercase
+          }}{{ getUser()?.lastName?.charAt(0) | uppercase }}
+        </div>
+      </li>
+      <li *ngIf="!loggedIn"><a routerLink="/login">Login</a></li>
+      <li *ngIf="!loggedIn"><a routerLink="/register">Sign up</a></li>
     </ul>
   </div>
 </nav>

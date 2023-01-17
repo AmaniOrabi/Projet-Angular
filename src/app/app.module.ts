@@ -11,6 +11,7 @@ import { PostCardComponent } from './post-card/post-card.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { SearchFormComponent } from './search-form/search-form.component';
+import { SearchComponent } from './search/search.component';
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
@@ -22,6 +23,7 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     HomeComponent,
     SearchFormComponent,
+    SearchComponent,
     FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
