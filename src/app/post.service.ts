@@ -10,4 +10,7 @@ export class PostService {
   getPosts = () => {
     return this.http.get(`${environment.api}post`);
   };
+  createPost = (body: any) => {
+    return this.http.post(`${environment.api}post`, body);
+  };
 }

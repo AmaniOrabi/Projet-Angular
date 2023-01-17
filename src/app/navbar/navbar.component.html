@@ -7,7 +7,7 @@
   <div>
     <ul class="container">
       <li>Search</li>
-      <li *ngIf="loggedIn">Post a trip</li>
+      <li *ngIf="loggedIn" routerLink="/create">Post a trip</li>
       <li *ngIf="loggedIn">
         <div (click)="logout()" class="profile">
           {{ getUser()?.name?.charAt(0) | uppercase

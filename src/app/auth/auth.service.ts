@@ -40,7 +40,7 @@ export class AuthService {
       lastName,
     });
   };
-  getUser = () => {
+  getUser: any = () => {
     return this.user;
   };
   setUser = (user: User) => {

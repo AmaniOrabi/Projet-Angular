@@ -25,3 +25,9 @@
   outline: none;
   border: 2px solid #747474;
 }
+.button-submit {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+}
