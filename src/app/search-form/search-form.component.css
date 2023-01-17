@@ -1,22 +1,55 @@
 .container {
   background-color: white;
   width: 60%;
-  height: 60px;
+  height: 50px;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   margin-top: 320px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.icon {
-  width: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
 }
 
 .container * {
   display: flex;
   flex-direction: row;
   font-size: 16px;
+}
+
+.icon {
+  width: 30px;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+input {
+  border: none;
+}
+.button {
+  background-color: rgb(0, 175, 245);
+  border-radius: 0px 16px 16px 0px;
+  border-color: transparent;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.line {
+  height: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: 0.5px solid rgb(112, 140, 145);
+  background-color: rgb(112, 140, 145);
+}
+.icon {
+  color: rgb(112, 140, 145);
+  margin: 0 10px 0 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 20px;
 }
