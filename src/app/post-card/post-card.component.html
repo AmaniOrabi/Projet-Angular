@@ -1,8 +1,8 @@
-<div class="container">
+<div *ngIf="loaded" class="container">
   <div class="trajectory-container">
     <div class="time">
-      <p>4:30</p>
-      <p>4:30</p>
+      <p>{{ post.departs_at | date : "HH:mm" }}</p>
+      <p></p>
     </div>
     <div class="trajectory">
       <div class="circle"></div>
@@ -10,14 +10,17 @@
       <div class="circle"></div>
     </div>
     <div style="margin-left: 10px">
-      <p>Tunis</p>
-      <p>Sousse</p>
+      <p>{{ post.start }}</p>
+      <p>{{ post.destination }}</p>
     </div>
   </div>
-  <div class="price">29 DT</div>
+  <div class="price">{{ post.price }} DT</div>
   <div style="display: flex; align-items: center; gap: 20px">
-    <div class="icon">AC</div>
-    Alaa Cherif
+    <div class="icon">
+      {{ user.name?.charAt(0) | uppercase
+      }}{{ user.lastName?.charAt(0) | uppercase }}
+    </div>
+    {{ user.name }} {{ user.lastName }}
   </div>
   <div
     style="
@@ -29,6 +32,6 @@
       font-size: 18px;
     "
   >
-    2
+    {{ post.place_count }}
   </div>
 </div>

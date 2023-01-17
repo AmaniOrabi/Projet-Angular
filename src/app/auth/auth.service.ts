@@ -50,4 +50,7 @@ export class AuthService {
     localStorage.removeItem('token');
     this.user = undefined;
   };
+  getUserById = (id: string) => {
+    return this.http.get(`${environment.api}users/user_id/${id}`);
+  };
 }
