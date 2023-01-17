@@ -1,12 +1,49 @@
 .homeContainer {
-  background-image: url("../../../../assets/images/carpool_blablabus_large-e3d8eff32c13cdafc080..svg");
+  background-image: url("../../assets/images/carpool_blablabus_large-e3d8eff32c13cdafc080..svg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 630px;
 }
 .title {
-  color: white;
+  color: rgb(5, 71, 82);
   font-size: 60px;
   font-weight: 300;
   text-align: center;
+  margin-top: 40px;
+}
+.perks {
+  display: flex;
+  gap: 70px;
+  padding-top: 90px;
+  align-content: center;
+  justify-content: center;
+}
+.perks p {
+  width: 300px;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  color: rgb(112, 140, 145);
+}
+.bonus {
+  display: flex;
+  gap: 70px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.bonus p {
+  width: 400px;
+}
+.description {
+  margin-top: 70px;
+}
+.bonus img {
+  width: 500px;
+  height: 500px;
+}
+.description2 {
+  margin-top: 70px;
+  margin-left: 90px;
 }

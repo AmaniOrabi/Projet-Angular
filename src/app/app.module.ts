@@ -11,9 +11,19 @@ import { PostCardComponent } from './post-card/post-card.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { SearchFormComponent } from './search-form/search-form.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, UserLoginComponent, SignUpComponent, PostCardComponent, NavbarComponent, HomeComponent, SearchFormComponent],
+  declarations: [
+    AppComponent,
+    UserLoginComponent,
+    SignUpComponent,
+    PostCardComponent,
+    NavbarComponent,
+    HomeComponent,
+    SearchFormComponent,
+    FooterComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
