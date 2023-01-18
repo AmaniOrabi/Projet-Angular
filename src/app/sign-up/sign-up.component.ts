@@ -1,8 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { environment } from 'src/environment/environment';
 import { AuthService } from '../auth/auth.service';
 
 @Component({
@@ -45,6 +43,6 @@ export class SignUpComponent implements OnInit, OnDestroy {
     if (this.authService.user) this.router.navigate(['/']);
   }
   ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+    if (this.subscription) this.subscription.unsubscribe();
   }
 }

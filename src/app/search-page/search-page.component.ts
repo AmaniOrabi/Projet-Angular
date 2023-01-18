@@ -25,6 +25,8 @@ export class SearchPageComponent implements OnInit {
     return this.posts;
   };
   updatePosts(filters: any) {
+    console.log(filters);
+
     if (filters.departure)
       this.posts = this.posts.filter(
         (post) => post.start === filters.departure.toString()

@@ -1,4 +1,4 @@
-<div *ngIf="loaded" class="container">
+<div (click)="applyToPost()" *ngIf="loaded" class="container">
   <div class="trajectory-container">
     <div class="time">
       <p>{{ post.departs_at | date : "HH:mm" }}</p>
