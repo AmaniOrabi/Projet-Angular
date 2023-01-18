@@ -30,6 +30,12 @@ export class SearchFormComponent implements OnDestroy {
     console.log(this.posts);
   };
   onSubmit(form: NgForm) {
+    console.log({
+      departure: form.value.departure,
+      arrival: form.value.arrival,
+      passengers: form.value.passengers,
+    });
+
     this.myEvent.emit({
       departure: form.value.departure,
       arrival: form.value.arrival,
